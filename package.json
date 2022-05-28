@@ -1,0 +1,11 @@
+{
+  "name": "challenge2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Piero <matematicadivina1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
