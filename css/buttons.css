@@ -1,0 +1,38 @@
+.alura{
+    background-color: var(--alura-blue);
+    color: var(--alura-light)
+}
+
+.alura:hover{
+    background-color: var(--alura-blue-selected);
+}
+
+.alura-v2{
+    background-color: var(--alura-light);
+    color: var(--alura-blue);
+    border: 1px solid var(--alura-blue);
+}
+
+.alura-v2:hover{
+    background-color: var(--alura-light-selected);
+}
+
+#button-main{
+    min-height: 90px;
+    min-width: 190px;
+    max-width: 300px;
+}
+
+#button-add-word{
+    min-height: 50px;
+    min-width: 190px;
+    max-width: 300px;
+}
+
+.button{
+    min-height: 50px;
+    min-width: 190px;
+    max-width: 300px;
+    width: 50%;
+    margin: 20px;
+}
