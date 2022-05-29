@@ -1,0 +1,10 @@
+.char{
+    border-bottom: 2px solid var(--alura-blue);
+    box-shadow: 0 4px 2px -2px var(--alura-light);
+    width: 18%;
+}
+
+#chars{
+    width: 80%;
+    height: 70px;
+}

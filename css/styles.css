@@ -1,5 +1,8 @@
+
 @import url(./reset.css);
 @import url(./buttons.css);
+@import url(./textArea.css);
+@import url(./chars.css);
 
 :root{
     --alura-blue:#0A3871 ;
@@ -31,6 +34,13 @@ header{
 
 }
 
+.title-light{
+    color: var(--alura-blue);
+}
+
+.title-dark{
+    color: var(--alura-light);
+}
 
 main{
     height: 100%;

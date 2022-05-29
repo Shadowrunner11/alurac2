@@ -11,9 +11,12 @@ class HTMLWrapper{
     onClick(handler, option=false){
         return this.on("click", handler, option)
     }
+    onInput(handler, option=false){
+        return this.on("input", handler, option)
+    }
     toggleClasses(class1, class2){
-        this.element.classList.toggle(class1)
-        this.element.classList.toggle(class2)
+        this.element?.classList?.toggle(class1)
+        this.element?.classList?.toggle(class2)
         return this
     }
     toggleClass(className){
@@ -26,7 +29,7 @@ class HTMLWrapper{
     }
     insertChildren(children){
         children.forEach(e=>{
-            createlement(this.element, e.tag, e.classNames, e.text, e.id)
+            createlement(this.element, e.tag, e.classNames, e.text, e.id, e.atrs)
         })
     }
 }
