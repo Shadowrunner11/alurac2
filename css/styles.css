@@ -11,10 +11,31 @@
     --alura-light-selected: #a1a1ef;
     --alura-dark: #2f2f2f;
 }
+.hidden{
+    display: none;
+}
+#chars{
+    margin-bottom: 10vh;
+}
+rect{
+    width: 100px;
+    height: 100px;
+}
+.hang-man{
+    width: 100%;
+    max-height: 40vh;
+    min-height: 20vh;
+    border: none;
+    outline: transparent;
+    margin-bottom: 90px;
+}
 
+.hang-man-dark{
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
 header{
     margin: 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,7 +50,7 @@ header{
 }
 
 #wrapper{
-    min-height: 100vh;
+    min-height: 90vh;
     height: 100px;
 
 }
@@ -69,4 +90,12 @@ main{
 
 .header-dark{
     background-color: #5f5f5f;
+}
+
+footer{
+  
+    text-align: center;
+    background-color: var(--alura-blue);
+    width: 100%;
+    color: var(--alura-light);
 }

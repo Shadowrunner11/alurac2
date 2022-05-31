@@ -8,6 +8,20 @@
     border: none;
     border-radius: 20px;
     font-size: larger;
+    margin: 20px;
+
+}
+
+.textarea-light::placeholder{
+    content: "Ingrese texto aqui";
+    color: var(--alura-blue);
+    font-size: larger;
+}
+
+.textarea-dark::placeholder{
+    content: "Ingrese texto aqui";
+    color: var(--alura-light);
+    font-size: larger;
 }
 
 .textarea-light{

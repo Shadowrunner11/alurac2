@@ -1,4 +1,4 @@
-import { cleanNode, createlement } from "../helpers/insetrt.js"
+import { cleanNode, createElementNS, createlement } from "../helpers/insetrt.js"
 
 class HTMLWrapper{
     constructor(element){
@@ -20,7 +20,7 @@ class HTMLWrapper{
         return this
     }
     toggleClass(className){
-        this.element.classList.toggle(className)
+        this.element?.classList.toggle(className)
         return this
     }
     removeChildren(){
@@ -30,6 +30,11 @@ class HTMLWrapper{
     insertChildren(children){
         children.forEach(e=>{
             createlement(this.element, e.tag, e.classNames, e.text, e.id, e.atrs)
+        })
+    }
+    insertChildrenNs(children){
+        children.forEach(e=>{
+            createElementNS(this.element, e.tag, e.classNames, e.text, e.id, e.atrs)
         })
     }
 }

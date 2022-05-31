@@ -1,6 +1,7 @@
 .alura{
     background-color: var(--alura-blue);
-    color: var(--alura-light)
+    color: var(--alura-light);
+    border: 1px solid var(--alura-light);
 }
 
 .alura:hover{
@@ -15,17 +16,20 @@
 
 .alura-v2:hover{
     background-color: var(--alura-light-selected);
+    
 }
 
-
+#button-main{
+    min-height: 100px;
+}
 
 
 
 .button{
     min-height: 50px;
     min-width: 190px;
-    max-width: 80%;
-    width: 80%;
+    max-width: 350px;
+    width: 100%;
     margin: 20px;
 }
 
@@ -44,11 +48,19 @@ div.button-container-main{
 @media (min-width:580px) {
     div.button-container{
         justify-content: space-between;
-        
+        flex-wrap: nowrap;
     }
+   
+}
+
+@media (min-width:900px) {
     .button{
-        min-width: 100px;
-        max-width: 45%;
-        width: 40%;
+        min-height: 50px;
+        min-width: 30%;
+        max-width: 40%;
+        width: 100%;
+        margin: 20px;
+        font-size: x-large;
     }
+   
 }
